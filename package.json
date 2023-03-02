@@ -1,0 +1,23 @@
+{
+	"name": "demo-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/electron-3pa/mazurek-demo-app.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/electron-3pa/mazurek-demo-app/issues"
+	},
+	"homepage": "https://github.com/electron-3pa/mazurek-demo-app#readme",
+	"devDependencies": {
+		"electron": "^23.1.1"
+	}
+}

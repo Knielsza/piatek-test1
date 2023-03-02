@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<script src="./renderer.js" defer></script>
+	<link rel="stylesheet" href="./style.css">
+	<script>
+		document.querySelector('#animals').addEventListener("change", function() {
+	if (this.value == "dogs") {
+	  console.log('dogs');
+	}if (this.value == "cats") {
+		console.log('cats');}
+	if (this.value == "niggas") {
+		console.log('cats');}
+		
+  });
+  function changeBackground() {
+	document.body.style.backgroundColor = "black";
+}
+
+window.addEventListener("load",function() { changeBackground('red') });
+	</script>
+	<style>
+
+		div {
+			display: flex;
+			flex-direction: column;
+			padding: 10px;
+		}
+
+		span {
+			padding: 10px;
+		}
+
+		select {
+			width: 50%;
+		}
+		input{
+			width: 80%;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Electron</h1>
+	<p>
+		a very nice app that you can click buttons in.
+	</p>
+	<div>
+		<span id="electron-v"><b>Span</b></span>
+
+		<span id="chrome-v"><b>Span</b></span>
+
+		<span id="node-v"><b>Span</b></span>
+
+	</div>
+	<div>
+		<select id="animals">
+			<option value="dogs">Dogs</option>
+			<option value="cats">Cats</option>
+			<option value="niggas">Niggas</option>
+
+		</select>
+		<p>My favourite animals are also</p>
+		<input>
+		<br>
+	</div>
+	<button onclick="notification('Keep','Yourself','Safe')">Hello</button>
+	<button id="toggle-dark-mode", onclick="changeBackground">Toggle Dark Mode</button>
+
+</body>
+
+</html>
